@@ -42,7 +42,7 @@
                                 Eddy Max
                             </h4>
                             <p class="text-muted">
-                                @3ddy.max
+                                @3ddy
                             </p>
                         </div>
                     </a>
@@ -55,15 +55,15 @@
                     <a class="menu-item">
                         <span><i class="uil uil-compass"></i> </span> <h3>Explore</h3>
                     </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-bell"></i><small class="notification-count">9+</small></span> <h3>Notification</h3>
-                        <!---notification pop up-->
-                        <div class="notifiaction-popup">
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></span></i> <h3>Notification</h3>
+                        <!---notification pop up-------->
+                        <div class="notification-popup">
                             <div>
                                 <div class="profile-photo">
                                     <img src="images/pp1.jpg" alt="">
                                 </div>
-                                <div class="notifiaction-body">
+                                <div class="notification-body">
                                     <b>James Bond</b> Accepetd your friend request
                                     <small class="text-muted">2 days ago</small>
                                 </div>
@@ -72,7 +72,7 @@
                                 <div class="profile-photo">
                                     <img src="images/pp4.jpg" alt="">
                                 </div>
-                                <div class="notifiaction-body">
+                                <div class="notification-body">
                                     <b>Linda Martin</b> Accepetd your friend request
                                     <small class="text-muted">1 day ago</small>
                                 </div>
@@ -81,7 +81,7 @@
                                 <div class="profile-photo">
                                     <img src="images/t1.jpg" alt="">
                                 </div>
-                                <div class="notifiaction-body">
+                                <div class="notification-body">
                                     <b>Max White</b> Tagged you in post
                                     <small class="text-muted">2 hours ago</small>
                                 </div>
@@ -90,7 +90,7 @@
                                 <div class="profile-photo">
                                     <img src="images/user-2.jpg" alt="">
                                 </div>
-                                <div class="notifiaction-body">
+                                <div class="notification-body">
                                     <b>Maya Stark</b> Commented on your post
                                     <small class="text-muted">6 minutes ago</small>
                                 </div>
@@ -99,7 +99,7 @@
                                 <div class="profile-photo">
                                     <img src="images/pp2.jpg" alt="">
                                 </div>
-                                <div class="notifiaction-body">
+                                <div class="notification-body">
                                     <b>Kai Star</b> Posted  for the first time in a while
                                     <small class="text-muted">1 day ago</small>
                                 </div>
@@ -107,7 +107,7 @@
                         </div>
                     </a>
                     <a class="menu-item"id="messages-notification">
-                        <span><i class="uil uil-envelope" ></i><small class="notification-count">6</small></span><h3>Messages</h3>
+                        <span><i class="uil uil-envelope" ><small class="notification-count">6</small></span></i><h3>Messages</h3>
                     </a>
                     <a class="menu-item">
                         <span><i class="uil uil-bookmark"></i> </span> <h3>Bookmarks</h3>
@@ -119,24 +119,86 @@
                         <span><i class="uil uil-palette"></i></span><h3>Theme</h3>
                     </a>
                     <a class="menu-item">
-                        <span> <i class="uil uil-setting"></i></span> <h3>Settings</h3>
+                        <span> <i class="uil uil-setting"></span></i> <h3>Settings</h3>
                     </a>    
-                    <label class="btn btn-primary" for="create-post">
-                        Create Post
-                    </label>
+                    
                 </div>
+                <label class="btn btn-primary" for="create-post">
+                    Create Post
+                </label>
             </div>  
             
             
             <!--------MIDDLE--------->
             <div class="middle">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut, est, quis nostrum voluptatibus magnam sed veritatis sint in dolore at exercitationem, tempora facilis! Numquam, voluptate. Magnam eligendi possimus aliquid obcaecati cupiditate! Quo adipisci tempore voluptatem sequi nisi magni corrupti aliquid nemo ipsa veniam assumenda nesciunt, illum ad sunt cum!
+                <!-------STORIES-------->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/pp1.jpg" alt="">
+                        </div>
+                        <p class="name">
+                            Your Story
+                        </p>
+                    </div>  
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/pp2.jpg" alt="">
+                        </div>
+                        <p class="name">
+                            Lilly James
+                        </p>
+                    </div> 
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/pp4.jpg" alt="">
+                        </div>
+                        <p class="name">
+                            Mary Poppins
+                        </p>
+                    </div> 
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/story1.jpg" alt="">
+                        </div>
+                        <p class="name">
+                            Jane Doe
+                        </p>
+                    </div> 
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/story4.jpg" alt="">
+                        </div>
+                        <p class="name">
+                            Jane Doe
+                        </p>
+                    </div> 
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="images/story3.jpg" alt="">
+                        </div>
+                        <p class="name">
+                            Jane Doe
+                        </p>
+                    </div> 
+                    <!---->
+                    
+                    
+    
+                </div>
+                <form action="" class="create-post">
+                    <div class="profile-photo">
+                        <img src="images/pp1.jpg" alt="">
+                    </div>
+                    <input type="text" id="create-post" placeholder="What's on your  mind, Eddy...">
+                    <input type="submit" value="post" class="btn btn-primary">
+                </form>
+               
 
             </div>
             <!--------RIGHT--------->
             <div class="right">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad id voluptatem, illum quam dolor odit adipisci nesciunt cum molestiae eius illo debitis nam ut esse quaerat veniam iure libero ex assumenda impedit rerum velit fugit molestias. Sit esse magnam, aut molestiae architecto nihil dolorum a aliquid saepe ut quas.
-
+                
             </div>
         </div>
     </main>
